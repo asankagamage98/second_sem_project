@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+
+	<!-- Import CSS Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="styles/user/layout.css">
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">
+	<link rel="stylesheet" type="text/css" href="styles/user/styling_variables.css">
+	<link rel="stylesheet" type="text/css" href="styles/user/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/user/forms.css">
+	<link rel="stylesheet" type="text/css" href="styles/user/checkout.css">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<script src="js/user/checkout.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="title-name">
+			<img src="images/user/logo.png" alt="" class="logo" id="logo">
+		</div>
+		<div class="login">
+			<a href="#"><img src="images/user/cart.svg" alt="" class="cart"></a>
+			<button class="login-logout">Login</button>
+		</div>
+	</header>
+
+	<nav>
+		<div class="navigation-menu">
+			<ul class="navigation">
+				<li class="nbtn"><a href="index.html">Home</a></li>
+				<li class="nbtn"><a href="index.html#aboutUs">About Us</a></li>
+				<li class="nbtn"><a href="category.html">Catagories</a></li>
+				<li class="nbtn"><a href="index.html#faq">FAQ</a></li>
+				<li class="nbtn"><a href="index.html#contactUs">Contact Us</a></li>
+			</ul>
+		</div>
+		
+		<div class="search">
+			<input type="text" class="search-bar" placeholder="Search Templates">
+			<button class="search-btn"><img src="images/user/search.png" alt="slider 1" class="search-icon"></button>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<main class="checkout">
+
+
+		<div class="item-list">
+			<div class="selected-item">
+				<div class="selected-item-thumbnail"><img src="images/user/thumbnails/1.jpg" alt="" id="thumbSmall"></div>
+				<div class="selected-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+				<div class="selected-item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus soluta neque obcaecati ad culpa corrupti, aperiam totam tenetur corporis.
+					<div class="item-list-buttons"></div>
+						<button id="itemDelete">Delete</button>
+					</div>
+				</div>
+
+				<div class="selected-item">
+					<div class="selected-item-thumbnail"><img src="images/user/thumbnails/1.jpg" alt="" id="thumbSmall"></div>
+					<div class="selected-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+					<div class="selected-item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus soluta neque obcaecati ad culpa corrupti, aperiam totam tenetur corporis.
+						<div class="item-list-buttons"></div>
+							<button id="itemDelete">Delete</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="payment">
+			<div class="total-price-box">
+				<p class="total-price-title">Total Amount</p>
+				<p class="total-amount" id="totalAmount">0.00 LKR</p>
+			</div>
+
+
+			<div class="payment-methods" style="background: #232323; padding: 0; width: 400px;">
+				<div class="payment-methods" style="height: 320px;">
+					<form action="php/check_out.php" method="GET">
+						<p class="checkout-text-labels">Name</p>
+						<input type="text" name="cardN" id="cardName" class="checkout-textbox" placeholder="Name On Your Card" onclick="findCardType();">
+						<p class="checkout-text-labels">Card Number</p>
+						<input type="text" name="cardNu" id="cardNum" class="checkout-textbox mini" placeholder="Debite/Credit Card Number"  onclick="findCardType();">
+						<img src="images/user/default_cardType.jpg" alt="" id="cardType">
+						<p class="checkout-text-labels">Expire Details</p>
+						<input type="text" name="month" id="exMonth" class="checkout-textbox verysmall-textbox" placeholder="MM"  onclick="findCardType();">
+						<input type="text" name="year" id="exYear" class="checkout-textbox verysmall-textbox" placeholder="YY"  onclick="findCardType();">
+						<p class="checkout-text-labels">CVV</p>
+						<input type="text" name="checkout5" id="cvv" class="checkout-textbox small-textbox"  onclick="findCardType();">
+						<button type="button" name="checkout6" class="checkout-btn" onclick="findCardType();checkoutFormValidity();">Pay</button>
+						<label name="checkout" id="attentionMes"></label>
+					</form>
+				</div>
+			</div>
+		</div>		
+	
+	
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+	<footer>
+		<div class="footer-description">
+			<h2>Description</h1>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, recusandae eius assumenda rem quo autem. Harum iusto deserunt officiis. Eaque id unde at a commodi quidem culpa quae aspernatur autem?</div>
+		<div class="quick-links">
+			<h2>Quick Links</h2>
+			<ul class="footer-links">
+				<li class="btn"><a href="index.html" class="footer">Home</a></li>
+				<li class="btn"><a href="index.html#contactUs" class="footer">Contact Us</a></li>
+				<li class="btn"><a href="terms_and_conditions.html" class="footer">Terms & Conditions</a></li>
+				<li class="btn"><a href="privacy.html" class="footer">Privacy & Policy</a></li>
+			</ul>
+			<div class="social-media-icon facebook"></div>
+			<div>
+				<a href="#"><img src="images/user/facebook.svg" alt="" class="social-media"></a>
+				<a href="#"><img src="images/user/twitter.svg" alt="" class="social-media"></a>
+				<a href="#"><img src="images/user/instagram.svg" alt="" class="social-media"></a>
+				<a href="#"><img src="images/user/linkedin.svg" alt="" class="social-media"></a>
+			</div>
+		</div>
+		<div class="official-links">
+			<div class="of-link-cont">
+				<a href="#logo"><img src="images/user/top-button.png" alt="" style="width: 40px;"></a><br>
+				<a href="#"><img src="images/user/playStore.png" alt="" class="app-store-links"></a>
+				<a href="#"><img src="images/user/appStore.png" alt="" class="app-store-links"></a>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod sit repellendus optio excepturi consequatur.
+				<br><img src="images/user/payments.png" alt="" class="pay-icons-group">
+			</div>
+			<div class="angle-shape">
+				<img src="images/user/footer-logo.png" alt="sliit logo" class="footer-logo">
+			</div>
+		</div>
+		
+	</footer>
+
+	<div class="copyright">Copyright &copy; 2020 by MLB_01.02_10</div>
+</body>
+</html>

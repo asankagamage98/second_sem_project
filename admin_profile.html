@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin System</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">
+	<link rel="stylesheet" type="text/css" href="styles/admin/master.css">
+	
+	<script type="text/javascript" src="js/admin/masterScript.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Online Presentation System</h1>
+	</header>
+		
+	<nav>
+		<a class="active" href="admin_profile.html">Admin Profile</a>
+		<a href="manage_users.html">Manage User Accounts</a>
+		<a href="feedbacks.html">Feedback and Reply</a>
+		<a href="#">Analytics</a>
+		<div class="nav-btn-bg"></div>
+		<div class="nav-btn-bg-active-admin"></div>
+		<button class="Logout-btn">Logout</button>
+	</nav>
+
+	<article>
+		<form>
+			<input type="text" name="name" value="" id="name" class="input-usertext" placeholder="Full Name"><br>
+			<input type="email" name="email" value="" id="email" class="input-usertext" placeholder="Email Address"><br>
+			<input type="text" name="username" value="" id="uname" class="input-usertext" placeholder="Username"><br>
+			<input type="password" name="password" value="" id="upwd" class="input-usertext" placeholder="password"><br>
+			<input type="password" name="cpassword" value="" id="cupwd" class="input-usertext" placeholder="Confirm Password"><br>
+			<input type="submit" name="submit" value="Save Changes" id="submit" class="Logout-btn" style="margin-left: 0; width: 150px;">
+			<br><br><br><br><br>
+		</form>
+	</article>
+
+	<footer>
+		&copy 2020 by MLB_01.02_10 Assignment Group
+	</footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signup</title>
+
+	<!-- Import CSS Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="styles/user/layout.css">
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">
+	<link rel="stylesheet" type="text/css" href="styles/user/styling_variables.css">
+	<link rel="stylesheet" type="text/css" href="styles/user/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/user/forms.css">
+	<link rel="stylesheet" type="text/css" href="styles/user/checkout.css">
+	<link rel="stylesheet" type="text/css" href="styles/user/article_page.css">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<script src="js/user/u_signup.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="title-name">
+			<img src="images/user/logo.png" alt="" class="logo" id="logo">
+		</div>
+		<div class="login">
+			<a href="#"><img src="images/user/cart.svg" alt="" class="cart"></a>
+			<button class="login-logout">Login</button>
+		</div>
+	</header>
+
+	<nav>
+		<div class="navigation-menu">
+			<ul class="navigation">
+				<li class="nbtn"><a href="index.html">Home</a></li>
+				<li class="nbtn"><a href="index.html#aboutUs">About Us</a></li>
+				<li class="nbtn"><a href="category.html">Catagories</a></li>
+				<li class="nbtn"><a href="index.html#faq">FAQ</a></li>
+				<li class="nbtn"><a href="index.html#contactUs">Contact Us</a></li>
+			</ul>
+		</div>
+		
+		<div class="search">
+			<input type="text" class="search-bar" placeholder="Search Templates">
+			<button class="search-btn"><img src="images/user/search.png" alt="slider 1" class="search-icon"></button>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<main class="privacyP">
+
+
+		   <div class="background signup-back">
+			
+			
+
+			<div class="signup-title">
+				<h1 style="color: #c23616;">Create a New Account</h1>
+				<p style="line-height: 0px; text-align: left;">Come loin our community!Let's set up your account. Already have one? Sign in <a href="#" style="color: #c23616;"><u>Here</u></a></p>
+			</div>
+				
+				<form action="" method="GET" id="signup">
+
+						<img src="images/user/user_profile_Image.png" id="selectedImage"><br>
+						<input type="file" id="myFile" name="filename">
+						<br><br>	
+			
+						<label id="lUname">Username </label> <br>
+						<input type="text" size="100" id="Uname" placeholder="Ex: thisara98"><br>
+				
+				
+						<label id="lFname">Full name </label><br>
+						<input type="text" size="100" id="Fname" placeholder="Ex: Thisara Yashodha"><br>
+						<lable>Email Address</lable><br>
+						<input type="email" size="100" id="Email" placeholder="Ex: thisra@email.com"><br>
+				
+					<label id="lGender">Gender</label><br>
+					<input type="radio" name="gender" value="male"><label>Male</label>
+					<input type="radio" name="gender" value="female"><lable>female</lable><br><br>
+					<label>Date of Birth </label> <br>
+					<input type="date" id="dateOfB"><br><br>
+	
+					<label id="lPass">Password</labale><br>
+						<input type="password" size="100" id="pass" placeholder="Shoud be at eight characters*"><br>
+						
+						
+					<label id="lcPass">Comfrom Password</labale><br>
+						<input type="password" size="100" id="ComfromPass">
+						<br>
+					
+						<input type="checkbox" name="validation" value="confrom" id="agrees"><label>I agree to your <a href="terms_and_conditions.html" style="color: #c23616;">teams of service</a> </label><br>
+						
+					
+					<button  onclick="signUpUser();" class="send">Signup</button> 
+					<a class="send" href="index.html" style="padding: 10px;">Cancel</a>
+					
+					
+	
+					
+				</form>
+				
+			
+			</div>
+			<div class="background" >
+			<meta name="google-signin-client_id" content="1030382206123-l1b0so6kusasd2dp1m19tpv1as8tsibo.apps.googleusercontent.com">
+			<div class="g-signin2" data-onsuccess="onSignIn">       
+
+			</div>
+
+	
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+	<footer>
+		<div class="footer-description">
+			<h2>Description</h1>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, recusandae eius assumenda rem quo autem. Harum iusto deserunt officiis. Eaque id unde at a commodi quidem culpa quae aspernatur autem?</div>
+		<div class="quick-links">
+			<h2>Quick Links</h2>
+			<ul class="footer-links">
+				<li class="btn"><a href="index.html" class="footer">Home</a></li>
+				<li class="btn"><a href="index.html#contactUs" class="footer">Contact Us</a></li>
+				<li class="btn"><a href="terms_and_conditions.html" class="footer">Terms & Conditions</a></li>
+				<li class="btn"><a href="privacy.html" class="footer">Privacy & Policy</a></li>
+			</ul>
+			<div class="social-media-icon facebook"></div>
+			<div>
+				<a href="#"><img src="images/user/facebook.svg" alt="" class="social-media"></a>
+				<a href="#"><img src="images/user/twitter.svg" alt="" class="social-media"></a>
+				<a href="#"><img src="images/user/instagram.svg" alt="" class="social-media"></a>
+				<a href="#"><img src="images/user/linkedin.svg" alt="" class="social-media"></a>
+			</div>
+		</div>
+		<div class="official-links">
+			<div class="of-link-cont">
+				<a href="#logo"><img src="images/user/top-button.png" alt="" style="width: 40px;"></a><br>
+				<a href="#"><img src="images/user/playStore.png" alt="" class="app-store-links"></a>
+				<a href="#"><img src="images/user/appStore.png" alt="" class="app-store-links"></a>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod sit repellendus optio excepturi consequatur.
+				<br><img src="images/user/payments.png" alt="" class="pay-icons-group">
+			</div>
+			<div class="angle-shape">
+				<img src="images/user/footer-logo.png" alt="sliit logo" class="footer-logo">
+			</div>
+		</div>
+		
+	</footer>
+
+	<div class="copyright">Copyright &copy; 2020 by MLB_01.02_10</div>
+</body>
+</html>
